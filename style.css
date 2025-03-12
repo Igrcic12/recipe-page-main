@@ -1,8 +1,15 @@
 body{
-    font-family:serif;
+    font-family: Outfit, serif;
     background-color: hsl(30, 54%, 90%);
     margin: 0;
     padding: 0;
+}
+
+
+.font{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-size: 2rem;
 }
 
 h2{
@@ -10,11 +17,12 @@ h2{
 }
 
 #container{
-    display: flex;
-    flex-basis: auto;
+    
+    
     justify-content: center;
     background-color: white;
-    margin: 30PX;
+    margin: 130PX;
+    margin-top: 20px;
     border-radius: 5%;
 }
 
@@ -27,16 +35,76 @@ h2{
 }
 
 #image img{
-    
-    border-radius: 3%;
+    display: flex;
+    flex-shrink: 1;
+    border-radius: 30px     ;
+    width:100%;
+    height:auto;
 }
 
+
+.nazivRecepta h1{
+    display: flex;
+    flex-shrink: 1;
+    font-size: 5rem;
+    padding: 40px 0;
+    margin: 0;
+}
+
+
 .kuhanje{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
     background-color: hsl(330, 100%, 98%);
-    padding: 50px;
-    border-radius: 2%;
+    border-radius: 30px;
+    padding: 20px;
+
 }
 .kuhanje h3{
     color: hsl(332, 51%, 32%);
+    font-size: 1.5rem;
     
+}
+
+.kuhanje ul{
+    list-style: none;
+}
+
+.kuhanje ul li::before{
+    content: "\2022";
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+    display: inline-block;
+    width: 2em;
+}
+
+.sastojci ul{
+    list-style: none;
+}
+
+.sastojci ul li::before{
+    content: "\2022";
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    display: inline-block;
+    width: 2em;
+}
+
+
+
+.instrukcije ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+th td{
+padding: 15px 20px;
+    border-bottom: solid 1px black;
 }

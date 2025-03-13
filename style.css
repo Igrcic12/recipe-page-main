@@ -3,12 +3,17 @@ body{
     background-color: hsl(30, 54%, 90%);
     margin: 0;
     padding: 0;
+    color: hsl(30, 10%, 34%);
 }
 
 
+p{
+    font-size: 16px;
+}
+
 .font{
     font-family: "Abril Fatface", serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2rem;
 }
 
@@ -17,11 +22,9 @@ h2{
 }
 
 #container{
-    
-    
     justify-content: center;
     background-color: white;
-    margin: 130PX;
+    margin: 100px;
     margin-top: 20px;
     border-radius: 5%;
 }
@@ -34,7 +37,7 @@ h2{
     flex-direction: column;
 }
 
-#image img{
+#image, img{
     display: flex;
     flex-shrink: 1;
     border-radius: 30px     ;
@@ -49,8 +52,17 @@ h2{
     font-size: 5rem;
     padding: 40px 0;
     margin: 0;
+    color: black;
+    
 }
 
+
+hr {
+    border: 0; /* Remove default border */
+    height: 1px; /* Set line thickness */
+    background-color: #ccc; /* Line color */
+    margin: 20px 0; /* Add spacing above and below the line */
+  }
 
 .kuhanje{
     display: flex;
@@ -100,11 +112,121 @@ h2{
 }
 
 table{
-    table-layout: fixed;
+    padding: 0 ;
     width: 100%;
+    border-collapse: collapse;
 }
 
-th td{
-padding: 15px 20px;
-    border-bottom: solid 1px black;
+td{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
 }
+
+th{
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+}
+
+th, td{
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+
+.attribution{
+    margin:20px;
+}
+
+/* mobile responsive */
+
+@media screen and (max-width: 1001px) {
+    .nazivRecepta h1{
+        font-size: 3.5rem;
+    }
+    #container{
+        justify-content: center;
+        background-color: white;
+        margin: 50px;
+        margin-top: 20px;
+        border-radius: 5%;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 700px) {
+
+    .nazivRecepta{
+        padding: 50px;
+    }
+    .kuhanje{
+        margin: 30px;
+    }
+
+    .sastojci{
+        margin: 30px;
+    }
+    .instrukcije{
+        margin: 30px;
+    }
+    .nutricije{
+        margin: 30px;
+    }
+    .nazivRecepta h1{
+        font-size: 3rem;
+    }
+    #container{
+        justify-content: center;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    #components{
+        margin: 0;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        background-color: white;
+    }
+    #image img{
+        border-radius: 0%;
+ 
+    }
+    
+  }
+
+  @media screen and (max-width: 375px){
+    .nazivRecepta{
+        padding: 10px;
+    }
+    .kuhanje{
+        margin: 10px;
+    }
+
+    .sastojci{
+        margin: 10px;
+    }
+    .instrukcije{
+        margin: 10px;
+    }
+    .nutricije{
+        margin: 10px;
+    }
+    .nazivRecepta h1{
+        font-size: 2rem;
+    }
+    #container{
+        justify-content: center;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+  
+  }
